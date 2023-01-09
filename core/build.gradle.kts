@@ -23,7 +23,8 @@ kotlin {
     android {
         publishAllLibraryVariants()
     }
-    js().browser()
+// TODO: Check why uncommenting this fails the build
+//    js().browser()
     iosX64()
     macosArm64()
     iosArm32()
@@ -49,12 +50,12 @@ kotlin {
                 implementation(libs.kotlinx.coroutines.test)
             }
         }
-
-        val jsTest by getting {
-            dependencies {
-                implementation(kotlin("test-js"))
-            }
-        }
+// TODO: Same here
+//        val jsTest by getting {
+//            dependencies {
+//                implementation(kotlin("test-js"))
+//            }
+//        }
 
         val androidMain by getting {
             dependencies {

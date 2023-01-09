@@ -11,6 +11,7 @@ public object TWILogger {
     }
 }
 
-public fun interface TWILoggerListener {
-    public fun log(tag: String, message: String, throwable: Throwable?)
+public interface TWILoggerListener {
+    public fun log(tag: String, message: String)
+    public fun log(tag: String, message: String, throwable: Throwable)
 }
