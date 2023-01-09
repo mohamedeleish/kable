@@ -53,7 +53,7 @@ public class Logging {
      */
     public var identifier: String? = null
 
-    public var engine: LogEngine = SystemLogEngine
+    public var engine: LogEngine = TWILogEngine
     public var level: Level = Level.Warnings
     public var format: Format = Format.Multiline
     public var data: DataProcessor = Hex
